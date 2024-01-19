@@ -1,0 +1,2079 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(252, 252, 250); 
+}
+.hidden{
+    display: none;
+}
+.showing{
+    display: none;
+}
+
+#sideNav{
+    background-color: rgb(2, 2, 26);
+    padding: 10px;
+    width: auto;
+    position: relative;
+    top: 10px;
+    justify-content: center;
+}
+.side{
+    display: flex;
+    background-color: rgb(2, 2, 26);
+
+}
+.side:hover{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+}
+.side a{
+    color: rgb(244, 244, 245);
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 12px;
+    text-transform: capitalize;
+    background-color: rgb(2, 2, 26);
+
+}
+.side a:hover{
+    color: gold;
+    text-decoration: underline;
+}
+.side a:visited{
+    color: rgb(44, 172, 44);
+}
+/* .show{
+    display: block;
+}
+.hide{
+    display: none;
+} */
+svg{
+    width: 30px;
+    height: 30px;
+    color: whitesmoke;
+    margin: 10px;
+}
+svg:hover{
+    color: black;
+}
+.drawer{
+    display: none;
+    width:50px;
+}
+.drawer div{
+    width: 15px;
+    height: 2px;
+    /* border-radius: 100%; */
+    margin:5px auto ;
+    display: none;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+nav h3{
+    width: 40%;
+    font-size: 22px;
+}
+nav li{
+    display: flex;
+    gap: 0 15px ;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+    width: 50%;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+.nav-links a{
+    color: black;
+    width: 20%;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.sign{
+    display: flex;
+    justify-content: space-around;
+}
+.sign a{
+
+    border: 1px solid rgb(179, 131, 12);
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    margin:0 15px;
+    width: 100%;
+    padding:5px 10px;
+}
+.sign a:hover{
+    border: 1px solid rgb(180, 48, 8);
+    background-color: black;
+    color: white;
+}
+ul{
+    display: flex;
+    width: 100%;
+    padding:0 20px
+    
+}
+.introduction{
+    width: 100%;
+
+}
+.intro-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+}
+.intro-content:nth-child(1){
+    width: 70%;
+    padding-left: 30px;
+    /* text-align: center; */
+}
+.intro-content :nth-child(1) h1{
+    font-size: 30px;
+    /* text-align: center; */
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    width: 90%;
+
+}
+.intro-content :nth-child(1) p{
+    font-size: 12px;
+    width: 60%;
+    margin-bottom:120px;
+}
+.intro-content :nth-child(1) a{
+    color: white;
+    background-color: rgb(179, 131, 12);
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    margin-left: 80px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+}
+
+.intro-imag{
+    margin-top: -40px;
+    width: 50%;
+}
+.intro-imag img{
+    width: 100%; 
+    height: 350px; 
+    object-fit: fit;
+}
+.links{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 0.5px solid rgb(214, 205, 205);
+    border-top: 0.5px solid rgb(214, 205, 205);
+    margin: auto;
+    margin-top: 30px;
+}
+.links div{
+    width: 15%;
+}
+.links div > a{
+    width: 100%;
+}
+.link-img{
+    width: 100%;
+    height: 40px;
+    object-fit: contain;
+}
+.section-2{
+    display: flex;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-top: 40px;
+}
+.class:nth-child(1){
+    margin-bottom: 10px;
+    width: 80%;
+    
+}
+.class :nth-child(1) img{
+    width: 70%;
+    border: 8px solid aliceblue;
+    border-radius: 10px;
+}
+.course-icon{
+    width: 15px;
+    height: 15px;
+
+}
+.iconn{
+    width: 15px;
+    height: 15px;
+        background-color: rgb(236, 236, 234);
+    /* margin-bottom: 12px; */
+}
+.iconn:hover{
+    background-color: rgb(179, 131, 12);
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+.class-icon{
+    width: 70% ; 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* margin-left: -20px; */
+    
+}
+.class-icon div{
+    width: 31%;
+    display: flex;
+        background-color: rgb(236, 236, 234);
+    margin: 0 10px;
+    padding-bottom: 6px;
+    border: 5px solid aliceblue;
+    border-radius: 7px;
+}
+.class-icon div > a{
+    text-decoration: none;
+    color: black;
+        background-color: rgb(236, 236, 234);
+    font-size: 9px;
+    margin-top: 6px;
+    /* margin-left: -15px; */
+}
+/* .section-2 :nth-child(2){
+
+} */
+.section-2:nth-child(2){
+    width: 60%;
+    /* margin: auto; */
+}
+.section-2 :nth-child(2) h2{
+width: 89%;
+font-size: 20px;
+margin-top: 50px;
+margin-bottom: 10px;
+padding: 0;
+text-transform: capitalize;
+border-bottom: 2px solid black;
+}
+
+.section-2 :nth-child(2) p{
+width: 70%;
+margin-bottom: 25px;
+}
+.checkbox{
+margin-bottom: 60px;
+width: 80%;
+}
+.checkbox div{
+display: flex;
+width: 60%;
+/* margin-left: -20; */
+
+}
+input{
+margin-bottom: 0px; 
+/* margin-right: -55px; */
+background-color: black;  
+/* margin-left: 20px; */
+
+}
+input:hover{
+    background-color: black;
+}
+label{
+    margin: 0;
+    margin-left: 10px;
+}
+.reg{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(179, 131, 12);
+    padding: 10px;
+    text-transform: capitalize;
+}
+.section-3{
+    padding: 20px 60px;
+    width: 90%;
+    
+}
+.section-3 h2{
+    font-size: 35px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+.course{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin: auto;
+}
+/* .course{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+} */
+ .eee{
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid grey; */
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(238, 238, 238);
+    /* margin: auto; */
+    padding: 25px 5px;
+}
+.search{
+    display: flex;
+    gap: 10px;
+    width: 32%;
+    /* margin-top: -30px; */
+    /* float: left; */
+}
+.search div{
+    /* margin-right: 30px; */
+    margin-top: -14px;
+    width: 25px;
+    height: 25px;
+    margin-right: -16px;
+    z-index: 1;
+    background-color: rgb(238, 238, 238);
+
+}
+.search input{
+    /* margin-left: 30px; */
+    /* width: 140px; */
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    margin-top: -10px;
+
+    /* margin-bottom: 25px; */
+
+}
+.search div > svg{
+    width: 20px;
+    height: 20px;
+    color: rgb(155, 141, 141);
+    background-color: rgb(238, 238, 238);
+}
+.btnn{
+background-color: black;
+color: white;
+padding:2px 18px;
+margin-bottom: -20px;
+margin-top: -20px;
+border: none;
+
+}
+.course p{
+    width: 60%;
+}
+.select-class{
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.select-class h3{
+    background-color: rgb(252, 253, 253);
+    border-bottom: 3px solid rgb(214, 204, 204);
+    padding: 10px;
+    box-shadow: 1px 1px 4px 1px grey ;
+   color: rgb(97, 91, 91);
+    width: 25%;
+    text-transform: capitalize;
+    text-align: center;
+}
+.select-class:nth-child(2){
+    color: rgb(179, 131, 12);
+    border-bottom: 3px solid rgb(179, 131, 12);
+}
+.select-class h3:hover {
+    color: rgb(179, 131, 12);
+    border-bottom: 3px solid rgb(179, 131, 12);
+}
+
+select{
+    border: none;
+    margin: 0;
+    margin-left: -65px;
+    padding: 10px;
+}
+.tutor-icon svg{
+    margin-top: 15px;
+}
+.tutor{
+    height: 80px;
+    margin-left: -20;
+}
+/* .course{
+       height: 80px; 
+} */
+.class-option{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.class-option div{
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: auto;
+
+}
+#standard1{
+    width: 50%;
+        background-color: rgb(236, 236, 234);
+    padding: 20px ;
+    margin: 10px 0px;
+    display: block;
+}
+#standard1 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+        background-color: rgb(236, 236, 234);
+
+}
+#standard1 h2{
+text-transform: capitalize;
+font-size: 25px;
+    background-color: rgb(236, 236, 234);
+}
+#standard1 p{
+    margin-top: 0;
+        background-color: rgb(236, 236, 234);
+    line-height: 25px;
+}
+#standard1 button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px 10px;
+        background-color: rgb(236, 236, 234);
+
+    text-transform: capitalize;
+}
+#standard2{
+    width: 50%;
+        background-color: rgb(236, 236, 234);
+    padding: 20px ;
+    margin: 10px 0px;
+    display: block;
+}
+
+#standard2 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+        background-color: rgb(236, 236, 234);
+
+}
+#standard2 > div > h2{
+text-transform: capitalize;
+font-size: 25px;
+    background-color: rgb(236, 236, 234);
+}
+#standard2 p{
+    margin-top: 0;
+        background-color: rgb(236, 236, 234);
+    line-height: 25px;
+}
+#standard2> div > button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px 10px;
+        background-color: rgb(236, 236, 234);
+
+    text-transform: capitalize;
+}
+
+#standard3{
+    width: 50%;
+        background-color: rgb(236, 236, 234);
+    padding: 20px ;
+    margin: 10px 0px;
+    display: block;
+}
+
+#standard3 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+        background-color: rgb(236, 236, 234);
+
+}
+#standard3 > div > h2{
+text-transform: capitalize;
+font-size: 25px;
+background-color: rgb(236, 236, 234);
+}
+#standard3 p{
+    margin-top: 0;
+    background-color: rgb(236, 236, 234);
+    line-height: 25px;
+}
+#standard3 > div > button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px 10px;
+    background-color: rgb(236, 236, 234);
+    text-transform: capitalize;
+}
+
+#standard4{
+    width: 50%;
+    background-color: rgb(236, 236, 234);
+    padding: 20px ;
+    margin: 10px 0px;
+    display: block;
+}
+
+#standard4 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(236, 236, 234);
+
+}
+#standard4 > div > h2{
+text-transform: capitalize;
+font-size: 25px;
+background-color: rgb(236, 236, 234);
+}
+#standard4  p{
+    margin-top: 0;
+    background-color: rgb(236, 236, 234);
+    line-height: 25px;
+}
+#standard4 > div > button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px 10px;
+    background-color: rgb(236, 236, 234);
+
+    text-transform: capitalize;
+}
+
+#standard5{
+    width: 50%;
+    background-color: rgb(236, 236, 234);
+    padding: 20px ;
+    margin: 10px 0px;
+    display: block;
+}
+
+#standard5 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    background-color: rgb(236, 236, 234);
+
+}
+#standard5 > div > h2{
+text-transform: capitalize;
+font-size: 25px;
+    background-color: rgb(236, 236, 234);
+}
+#standard5 p{
+    margin-top: 0;
+    background-color: rgb(236, 236, 234);
+    line-height: 25px;
+}
+#standard5 > div > button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px 10px;
+    background-color: rgb(236, 236, 234);
+
+    text-transform: capitalize;
+}
+
+#standard6{
+    width: 50%;
+    background-color: rgb(236, 236, 234);
+    padding: 20px ;
+    margin: 10px 0px;
+    display: block;
+}
+
+#standard6 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+     background-color: rgb(236, 236, 234);
+
+}
+#standard6 > div > h2{
+text-transform: capitalize;
+font-size: 25px;
+    background-color: rgb(236, 236, 234);
+}
+#standard6 p{
+    margin-top: 0;
+    background-color: rgb(236, 236, 234);
+    line-height: 25px;
+}
+#standard6 > div > button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px 10px;
+    background-color: rgb(236, 236, 234);
+
+    text-transform: capitalize;
+}
+.section-4:nth-child(3) {
+    margin: auto;
+    width: 20%;
+    text-align: center;
+
+}
+.section-4 :nth-child(3) a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(179, 131, 12);
+    padding: 10px;
+    position: relative;
+    bottom: -10px;
+    left: 610px;
+}
+.testimonial{
+    padding: 20px 60px;
+    width: 100%;
+    
+}
+
+.testimonial h2{
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    /* margin-left: 30px; */
+}
+.carousel{
+    width: 80%;
+    margin: auto;
+}
+.carousel button > span{
+    /* width: 20px;
+    height: 20px;
+    margin-top: 40px;
+    background-color: black; */
+    display: none;
+} 
+.jj{
+    display: flex;
+    justify-content: space-between;
+     width: 100%; 
+} 
+.jj :nth-child(2){
+    width: 50%;
+    margin-top: 110px;
+    border-left: 2px solid goldenrod;
+    height: fit-content;
+    padding: 10px;
+    box-shadow: 1px 2px 2px 1px ;
+    background-color: rgb(236, 236, 234);
+}
+.jj :nth-child(2) p{
+    width: fit-content;
+    background-color: rgb(236, 236, 234);
+}
+.jj :nth-child(2) h3{
+margin: 0;
+border: none;
+font-size: 18px;
+width: fit-content;
+}
+.jj img{
+    border: 10px solid rgb(240, 242, 248);
+    width:35%; 
+    height: 300px;
+}
+.subscribe{
+    width: 90%;
+    margin: auto;
+    background-color: goldenrod;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+
+}
+.subscribe h2{
+    width: 50%;
+    background-color: goldenrod;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 25px;
+    
+}
+.subscribe p{
+    width: 40%;
+    background-color: goldenrod;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.subscribe button{
+    /* width: 50%; */
+    background-color: rgb(10, 10, 9);
+    margin: auto;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+footer div{
+    width: 30%;
+    background-color: black;
+
+}
+footer div h3{
+    text-decoration: none;
+    background-color: black;
+    font-size: 20px;
+}
+footer div p{
+    text-decoration: none;
+    background-color: black;
+}
+footer div a{
+    display:block ;
+     text-decoration: none;
+     background-color: black;
+     color: white;
+
+}
+@media(max-width:768px){
+    *{
+        padding: none;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        text-transform: capitalize;
+    }
+    .hidden{
+        display: none;
+    }
+    .showing{
+        display: none;
+    }
+    .drawer{
+        display: none;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding:  20px;
+        /* text-decoration: none; */
+        /* font-size: 14px; */
+    }
+    nav h3{
+        width: 10%;
+        font-size: 16px;
+        margin-right: 30px;
+    }
+    nav li{
+        display: flex; 
+        gap:15px ;
+        /* font-size: 17px; */
+        /* text-decoration: none; */
+        width: 90%;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        gap: 15px;
+        width: 55%;
+    }
+    .nav-links a{
+        color: black;
+        width: 30%;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .sign{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0px;
+        width: 40%;
+    }
+    .sign a{
+    
+        border: 1px solid rgb(179, 131, 12);
+        text-decoration: none;
+        font-size: 14px;
+        color: black;
+        width: 40%;
+        padding: 7px;
+    }
+    .sign a:hover{
+        border: 1px solid rgb(180, 48, 8);
+        background-color: black;
+        color: white;
+    }
+    ul{
+        display: flex;
+        width: 100%;
+        padding:0 20px
+        
+    }
+    .intro-content{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: auto;
+        padding: 20px;
+    }
+    .intro-content:nth-child(1){
+        width: 40%;
+        /* padding-left: 10px; */
+        /* text-align: center; */
+    }
+    .intro-content :nth-child(1) h1{
+        font-size: 20px;
+        /* text-align: center; */
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        width: 90%;
+    
+    }
+    .intro-content :nth-child(1) p{
+        font-size: 12px;
+        width: 80%;
+        margin-bottom:40px;
+    }
+    
+    .intro-content :nth-child(1) a{
+        color: white;
+        background-color: rgb(179, 131, 12);
+        text-decoration: none;
+        font-size: 14px;
+        margin-left: 30px;
+        padding: 10px 15px;
+        text-transform: capitalize;
+    }
+    .intro-imag{
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    .intro-imag img{
+        width: 100%; 
+        height: 250px;
+    } 
+    .links{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 0.5px solid rgb(214, 205, 205);
+        border-top: 0.5px solid rgb(214, 205, 205);
+        margin: auto;
+        /* margin-top: 30px; */
+    }
+    .links div{
+        width: 15%;
+    }
+    .links div > a{
+        width: 100%;
+    }
+    .link-img{
+        width: 100%;
+        height: 30px;
+        object-fit: contain;
+    }
+    .section-2{
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+    }
+    .class{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+    }
+    .class:nth-child(1){
+        margin-bottom: 10px;
+        width: 100%;
+        height: fit-content;
+        
+    }
+    .class :nth-child(1) img{
+        width: 90%;
+        height: 200px;
+        border: 8px solid aliceblue;
+        border-radius: 10px;
+    }
+    .course-icon{
+        width: 15px;
+        height: 15px;
+        background-color: rgb(236, 236, 234);    
+    }
+    .iconn{
+        width: 15px;
+        height: 15px;
+        background-color: rgb(236, 236, 234);
+        /* margin-left: 20px; */
+    }
+    .iconn:hover{
+        background-color: rgb(179, 131, 12);
+        color: white;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    .class-icon{
+        width: 100% ; 
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-left: -10px;
+        
+    }
+    .class-icon div{
+        width: 33%;
+        display: flex;
+        background-color: rgb(236, 236, 234);
+        margin: 0 10px;
+        padding-bottom: 6px;
+        border: 5px solid aliceblue;
+        border-radius: 7px;
+    }
+    .class-icon div > a{
+        text-decoration: none;
+        color: black;
+        background-color: rgb(236, 236, 234);
+        font-size: 7px;
+        margin-left: -10px;
+    }
+    .section-2:nth-child(2){
+        width: 60%;
+    }
+    .section-2 :nth-child(2) h2{
+    width: 89%;
+    font-size: 17px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    border-bottom: 2px solid black;
+    } 
+    .section-2 :nth-child(2) p{
+    width: 70%;
+    margin-bottom: 25px;
+    font-size: 12px;
+    }
+    .checkbox{
+    margin-bottom: 30px;
+    width: 100%;
+    }
+    .checkbox div{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    }
+    input{
+    margin-bottom: 0px; 
+    background-color: black;      
+    }
+    input:hover{
+        background-color: black;
+    }
+    label{
+        margin: 0;
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .reg{
+        text-decoration: none;
+        color: white;
+        background-color: rgb(179, 131, 12);
+        padding: 10px;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+    .section-3{
+        padding: 20px 60px;
+        width: 90%;
+        
+    }
+    .section-3 h2{
+        font-size: 20px;
+        border-bottom: 2px solid black;
+        width: fit-content;
+        margin-bottom: 20px;
+    }
+    .course{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        width: 100%;
+        margin-top: 20px;
+        margin: auto;
+    }
+     .eee{
+        width:60%;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+        margin-top: 20px;
+        background-color: rgb(238, 238, 238);
+    }
+    .search{
+        display: flex;
+        gap: 10px;
+        width: 32%;
+    }
+    .search div{
+        margin-top: -14px;
+        width: 25px;
+        height: 25px;
+        margin-right: -16px;
+        z-index: 1;
+        background-color: rgb(238, 238, 238);
+    }
+    .search input{
+        width: 140px;
+        padding: 10px;
+        background-color: rgb(238, 238, 238);
+        border: none;
+        margin-top: -10px;    
+    }
+    .search div > svg{
+        width: 15px;
+        height: 15px;
+        color: rgb(155, 141, 141);
+        background-color: rgb(238, 238, 238);
+    }
+    ::placeholder{
+        font-size: 12px;
+        text-transform: lowercase;
+    }
+    .btnn{
+    background-color: black;
+    color: white;
+    padding:2px 18px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    border: none;
+    
+    }
+    .course p{
+        width: 40%;
+        font-size: 10px;
+    }
+    .select-class{
+        width: 90%;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    .select-class h3{
+        background-color: rgb(252, 253, 253);
+        border-bottom: 3px solid rgb(214, 204, 204);
+        padding: 10px;
+        box-shadow: 1px 1px 4px 1px grey ;
+        color: rgb(97, 91, 91);
+        width: 25%;
+        text-transform: capitalize;
+        text-align: center;
+        font-size: 18px;
+    }
+    .select-class:nth-child(2){
+        color: rgb(179, 131, 12);
+        border-bottom: 3px solid rgb(179, 131, 12);
+    }
+    .select-class h3:hover {
+        color: rgb(179, 131, 12);
+        border-bottom: 3px solid rgb(179, 131, 12);
+    }
+    
+    select{
+        border: none;
+        margin: 0;
+        margin-left: -65px;
+        padding: 10px;
+    }
+    .tutor-icon svg{
+        margin-top: 15px;
+    }
+    .tutor{
+        height: 80px;
+        margin-left: -20;
+    }
+    /* .course{
+           height: 80px; 
+    } */
+    .class-option{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .class-option div{
+        width: 90%;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        margin: auto;
+    
+    }
+    #standard1{
+        width: 50%;
+        background-color: rgb(236, 236, 234);
+        padding: 20px ;
+        margin: 10px 0px;
+        display: block;
+    }
+    #standard1 div{
+        width: 100%;
+        margin-bottom: 20px;
+    
+    }
+    #standard1 div > h2{
+    font-size: 20px;
+    }
+    #standard1 p{
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    #standard1 button{
+        padding:3px 7px;
+        font-size: 12px;
+    }
+    #standard2{
+        width: 50%;
+        background-color: rgb(236, 236, 234);
+        padding: 20px ;
+        margin: 10px 0px;
+        display: block;
+    }
+    #standard2 div{
+        width: 100%;
+        margin-bottom: 20px;
+    
+    }
+    #standard2 div > h2{
+    font-size: 20px;
+    }
+    #standard2 p{
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    #standard2 div > button{
+        padding:3px 7px;
+        font-size: 12px;
+    }
+    
+    #standard3{
+        width: 50%;
+        background-color: rgb(236, 236, 234);
+        padding: 20px ;
+        margin: 10px 0px;
+        display: block;
+    }
+    #standard3 div{
+        width: 100%;
+        margin-bottom: 20px;
+    
+    }
+    #standard3 div > h2{
+    font-size: 20px;
+    }
+    #standard3 p{
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    #standard3 div > button{
+        padding:3px 7px;
+        font-size: 12px;
+    }
+    
+    #standard4{
+        width: 50%;
+        background-color: rgb(236, 236, 234);
+        padding: 20px ;
+        margin: 10px 0px;
+        display: block;
+    }
+    #standard4 div{
+        width: 100%;
+        margin-bottom: 20px;
+    
+    }
+    #standard4 div > h2{
+    font-size: 20px;
+    }
+    #standard4 p{
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    #standard4 div > button{
+        padding:3px 7px;
+        font-size: 12px;
+    }
+    #standard5{
+        width: 50%;
+        background-color: rgb(236, 236, 234);
+        padding: 20px ;
+        margin: 10px 0px;
+        display: block;
+    }
+    #standard5 div{
+        width: 100%;
+        margin-bottom: 20px;
+    
+    }
+    #standard5 div > h2{
+    font-size: 20px;
+    }
+    #standard5 p{
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    #standard5 > div > button{
+        padding:3px 7px;
+        font-size: 12px;
+    }
+    
+    #standard6{
+        width: 50%;
+        background-color: rgb(236, 236, 234);
+        padding: 20px ;
+        margin: 10px 0px;
+        display: block;
+    }
+    #standard6 div{
+        width: 100%;
+        margin-bottom: 20px;
+    
+    }
+    #standard6 div > h2{
+    font-size: 20px;
+    }
+    #standard6 p{
+        line-height: 20px;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    #standard6 > div > button{
+        padding:3px 7px;
+        font-size: 12px;
+    }
+    .section-4:nth-child(3) {
+        margin: auto;
+        width: 20%;
+        text-align: center;
+    
+    }
+    .section-4 :nth-child(3) a {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(179, 131, 12);
+        padding: 10px;
+        position: relative;
+        left: 320px;
+        font-size: 12px;
+    }
+    .testimonial{
+        padding: 20px 60px;
+        width: 100%;
+        margin-top: 50px;
+        
+    }
+    .testimonial h2{
+        font-size: 20px;
+    }
+    .carousel{
+        width: 90%;
+        margin: auto;
+    }
+    
+    .jj{
+        display: flex;
+        justify-content: space-between;
+         width: 100%; 
+    } 
+    .jj :nth-child(2){
+        width: 50%;
+        margin-top: 70px;
+        border-left: 2px solid goldenrod;
+        height: fit-content;
+        padding: 10px;
+    }
+    .jj :nth-child(2) p{
+        font-size: 12px;
+        width: fit-content;
+        background-color: rgb(236, 236, 234);
+    }
+    .jj :nth-child(2) h3{
+    margin: 0;
+    font-size: 15px;
+    padding: 0;
+    }
+    .jj img{
+        border: 10px solid rgb(240, 242, 248);
+        width:35%; 
+        height: 200px;
+    }
+    .subscribe{
+        width: 90%;
+        margin: auto;
+        background-color: goldenrod;
+        padding: 40px 0;
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+    
+    }
+    .subscribe h2{
+        width: 70%;
+        background-color: goldenrod;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 18px;
+        
+    }
+    .subscribe p{
+        width: 40%;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .subscribe button{
+        margin: auto;
+        color: white;
+        padding: 10px;
+        border: none;
+    }
+    footer{
+        padding: 20px;
+    }
+    footer div{
+        width: 30%;
+        background-color: black;
+    
+    }
+    footer div h3{
+        text-decoration: none;
+        background-color: black;
+        font-size: 15px;
+    }
+    footer div p{
+        text-decoration: none;
+        background-color: black;
+        font-size: 12px;
+    }
+    footer div a{
+        display:block ;
+         text-decoration: none;
+         background-color: black;
+         color: white;
+    
+    }
+}
+@media(max-width:500px){
+    #sideNav{
+        padding: 10px 20px;
+        position: relative;
+        top: 0px;
+        width: fit-content;
+    }
+    
+    .side{
+        display: flex;
+    }
+    .side a{
+        font-size: 10px;
+    }
+    .hidden{
+        display: none;
+
+    }
+    .drawer{
+        display: block;
+
+    }
+    .drawer span{
+        margin:5px auto ;
+        background-color: black;
+        height: 2px;
+        width: 15px;
+        display: block;
+    }
+    .showing{
+        display: block;
+    }
+    /* .show{
+        display: block;
+    }
+    .hide{
+        display: none;
+    } */
+    svg{
+        width: 20px;
+        height: 20px;
+    }
+    
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 10px ;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    nav h3{
+        width: 35%;
+        font-size: 18px;
+        margin-left: 20px;
+        visibility: hidden;
+    }
+    nav li{
+        display: flex;
+        gap: 0 15px ;
+        font-size: 17px;
+        color: black;
+        text-decoration: none;
+        width: 70%;
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        width: 50%;
+        
+    }
+    .nav-links a{
+        width: 20%;
+        font-size: 12px;
+        display: none;
+    }
+    .sign{
+        width: 55%;
+        gap: 10px;
+   }
+    .sign a{
+        font-size: 12px;
+        margin:0 ;
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .sign a:hover{
+        border: 1px solid rgb(180, 48, 8);
+        background-color: black;
+        color: white;
+    }
+    /* ul{
+        display: flex;
+        width: 100%;
+        
+    } */
+    .intro-content{
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    .intro-content:nth-child(1){
+        width: 70%;
+        text-align: center;
+    }
+    .intro-content :nth-child(1) h1{
+        font-size: 16px;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        width: 100%;
+        margin-left: -15px;
+    }
+    .intro-content :nth-child(1) p{
+        font-size: 10px;
+        width: 80%;
+        margin-bottom:30px;
+    }
+    .intro-content :nth-child(1) a{
+        font-size: 10px;
+        margin-left: -30px;
+        padding: 10px;
+    }
+    
+    .intro-imag{
+        margin-top: -30px;
+        width: 55%;
+        margin-right: 0;
+    }
+    .intro-imag img{
+        width: 220px; 
+        height: 200px; 
+    }
+    .links{
+        flex-wrap: nowrap;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .links div{
+        width: 15%;
+    }
+    .links div > a{
+        width: 100%;
+    }
+    .link-img{
+        width: 100%;
+        height: 25px;
+    }
+    .section-2{
+        width: 100%;
+        padding: 10px;
+    }
+    .class{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin-top: 30px;
+        padding-right: 10px;
+
+    }
+    .class:nth-child(1){
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .class :nth-child(1) img{
+        width: 200px;
+        height: 200px;
+        border: 8px solid aliceblue;
+        border-radius: 10px;
+    }
+    .course-icon{
+        width: 0px;
+        height: 0px;
+        display: none;
+    }
+    .iconn{
+        display: none;
+        width: 0px;
+        height: 0px;
+        background-color: rgb(236, 236, 234);
+    }
+    .iconn:hover{
+        background-color: rgb(179, 131, 12);
+        color: white;
+        padding: 3px;
+        border-radius: 5px;
+        display: none;
+    }
+    .class-icon{
+        width: 100% ; 
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        
+    }
+    .class-icon div{
+        width: 33.3%;
+        display: flex;
+        background-color: rgb(236, 236, 234);
+        padding-bottom: 6px;
+        border: 5px solid aliceblue;
+        border-radius: 7px;
+        margin: 0;
+    }
+    .class-icon div > a{
+        text-decoration: none;
+        color: black;
+        z-index: 1;
+        background-color: rgb(236, 236, 234);
+        font-size: 7px;
+        margin-top: 10px;
+        width: 100%;
+        /* margin-left: -15px; */
+    }
+    /* .section-2 :nth-child(2){
+    
+    } */
+    .section-2:nth-child(2){
+        width: 40%;
+        padding-left: 15px;
+        /* margin: auto; */
+    }
+    .section-2 :nth-child(2) h2{
+    width: 95%;
+    font-size: 14px;
+    margin-top: 30px;
+    }
+    
+    .section-2 :nth-child(2) p{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 10px;
+    }
+    .checkbox{
+    margin-bottom: 20px;
+    width: 100%;
+    }
+    .checkbox div{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;    
+    }
+    input{
+    margin-bottom: 0px; 
+    background-color: black;      
+    }
+    input:hover{
+        background-color: black;
+    }
+    label{
+        margin: 0;
+        margin-left: 7px;
+        font-size: 9px;
+    }
+    .reg{
+        margin-top: 0;
+        padding: 10px;
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    .section-3{
+        padding: 20px 10px;
+        width: 100%;
+        
+    }
+    .section-3 h2{
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .course{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 5px;
+        width: 100%;
+        margin-top: 10px;
+    }
+     .eee{
+        width:90%;
+        display: flex;
+        flex-wrap: nowrap;
+        height: 40px;
+        margin-top: 10px;
+        background-color: rgb(238, 238, 238);
+        margin: auto;
+        padding: 25px 5px;
+    }
+    .search{
+        display: flex;
+        gap: 10px;
+        width: 32%;
+    }
+    .search div{
+        margin-top: -14px;
+        width: 25px;
+        height: 25px;
+        margin-right: -16px;
+        background-color: rgb(238, 238, 238);
+    }
+    .search input{
+        padding: 10px;
+        background-color: rgb(238, 238, 238);
+        border: none;
+        font-size: 10px;
+        margin-top: -10px;    
+    }
+    .search div > svg{
+        width: 15px;
+        height: 15px;
+        color: rgb(155, 141, 141);
+        background-color: rgb(238, 238, 238);
+    }
+    .btnn{
+    background-color: black;
+    color: white;
+    padding:2px 10px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+    border: none;
+    font-size: 9px;
+    
+    }
+    .course p{
+        width: 90%;
+        margin: auto;
+        font-size: 9px;
+    }
+    .select-class{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .select-class h3{
+        padding: 10px;
+        width: 25%;
+        font-size: 12px;
+    }
+    .select-class:nth-child(2){
+        color: rgb(179, 131, 12);
+        border-bottom: 3px solid rgb(179, 131, 12);
+    }
+    .select-class h3:hover {
+        color: rgb(179, 131, 12);
+        border-bottom: 3px solid rgb(179, 131, 12);
+    }
+    
+    /* select{
+        border: none;
+        margin: 0;
+        margin-left: -65px;
+        padding: 10px;
+    }
+    .tutor-icon svg{
+        margin-top: 15px;
+    }
+    .tutor{
+        height: 80px;
+        margin-left: -20;
+    } */
+    /* .course{
+           height: 80px; 
+    } */
+    .class-option{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .class-option div{
+        width: 90%;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        margin: auto;
+    
+    }
+    #standard1{
+        padding: 10px ;
+        margin: 10px 0px;
+    }
+    #standard1 div{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #standard1 h2{
+    font-size: 10px;
+    }
+    #standard1 p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    #standard1> div > button{
+        padding:3px ;
+        font-size:9px;
+        margin-top: 10px;
+        height: fit-content;
+    }
+    #standard2{
+        padding: 10px ;
+        margin: 10px 0px;
+    }
+    #standard2 div{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #standard2 h2{
+    font-size: 10px;
+    }
+    #standard2 p{
+        margin-top: 10px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    #standard2> div > button{
+        padding:3px ;
+        font-size:9px;
+        margin-top: 10px;
+        height: fit-content;
+    }
+    
+    #standard3{
+        padding: 10px ;
+        margin: 10px 0px;
+    }
+    #standard3 div{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #standard3 h2{
+    font-size: 10px;
+    }
+    #standard3 p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    #standard3> div > button{
+        padding:3px ;
+        font-size:9px;
+        margin-top: 10px;
+        height: fit-content;
+    }
+    
+    #standard4{
+        padding: 10px ;
+        margin: 10px 0px;
+    }
+    #standard4 div{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #standard4 h2{
+    font-size: 10px;
+    }
+    #standard4 p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    #standard4> div > button{
+        padding:3px ;
+        font-size:9px;
+        margin-top: 10px;
+        height: fit-content;
+    }
+    
+    #standard5{
+        padding: 10px ;
+        margin: 10px 0px;
+    }
+    #standard5 div{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #standard5 h2{
+    font-size: 10px;
+    }
+    #standard5 p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    #standard5> div > button{
+        padding:3px ;
+        font-size:9px;
+        margin-top: 10px;
+        height: fit-content;
+    }
+    #standard6{
+        padding: 10px ;
+        margin: 10px 0px;
+    }
+    #standard6 div{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    #standard6 h2{
+    font-size: 10px;
+    }
+    #standard6 p{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    #standard6> div > button{
+        padding:3px ;
+        font-size:9px;
+        margin-top: 10px;
+        height: fit-content;
+    }
+    .section-4:nth-child(3) {
+        margin: auto;
+        width: 20%;
+        text-align: center;
+    
+    }
+    .section-4 :nth-child(3) a {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(179, 131, 12);
+        padding: 10px;
+        position: relative;
+        bottom: -10px;
+        left: 110px;
+    }
+    .testimonial{
+        padding: 20px;
+        width: 100%;
+        
+    }
+    
+    .testimonial h2{
+        font-size: 15px;
+        border-bottom: 2px solid black;
+        width: fit-content;
+        /* margin-left: 30px; */
+    }
+    .carousel{
+        width: 100%;
+        margin: 0;
+    }
+    .carousel button > span{
+        /* width: 20px;
+        height: 20px;
+        margin-top: 40px;
+        background-color: black; */
+        display: none;
+    } 
+    .jj{
+        display: block;
+         width: 100%; 
+         padding: 0;
+    } 
+    .jj :nth-child(2){
+        width: 100%;
+        margin-top: -30px;
+        border-left: 2px solid goldenrod;
+        height: fit-content;
+        padding: 10px;
+        box-shadow: 1px 2px 2px 1px ;
+        background-color: rgb(236, 236, 234);
+    }
+    .jj :nth-child(2) p{
+        width: 100%;
+        background-color: rgb(236, 236, 234);
+    }
+    .jj :nth-child(2) h3{
+    margin: 0;
+    border: none;
+    font-size: 15px;
+    width: fit-content;
+    }
+    .jj img{
+        border: 10px solid rgb(240, 242, 248);
+        width:70%; 
+        height: 200px;
+    }
+    .carousel-indicators{
+        visibility: hidden;
+    }
+    .subscribe{
+        width: 90%;
+        padding: 40px 0;
+        margin-bottom: 20px;
+    
+    }
+    .subscribe h2{
+        width: 80%;
+        margin-bottom: 20px;
+        font-size: 15px;
+        
+    }
+    .subscribe p{
+        font-size: 10px;
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .subscribe button{
+        font-size: 10px;
+        padding: 10px;
+        border: none;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px;
+    }
+    footer div{
+        width: 25%;
+        background-color: black;
+    
+    }
+    footer div h3{
+        text-decoration: none;
+        background-color: black;
+        font-size: 14px;
+    }
+    footer div p{
+        font-size: 10px;
+        text-decoration: none;
+        background-color: black;
+    }
+    .footer-message{
+        width: 40%;
+    }
+    footer div a{
+        display:block ;
+        font-size: 10px;
+         text-decoration: none;
+         background-color: black;
+         color: white;
+    
+    }
+}
