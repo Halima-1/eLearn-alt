@@ -70,6 +70,7 @@ svg:hover{
     /* border-radius: 100%; */
     margin:5px auto ;
     display: none;
+    font-family: Arial, Helvetica, sans-serif
 }
 nav{
     width: 100%;
@@ -83,7 +84,7 @@ nav{
     z-index: 2;
 }
 nav h3{
-    width: 40%;
+    width: 55%;
     font-size: 22px;
 }
 nav li{
@@ -175,6 +176,10 @@ ul{
     margin-top: -40px;
     width: 50%;
 }
+.intro-imag marquee{
+    display: none;
+    font-size: 10px;
+}
 .intro-imag img{
     width: 100%; 
     height: 350px; 
@@ -225,17 +230,14 @@ ul{
     border-radius: 10px;
 }
 .course-icon{
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
+    color: black;
+    margin: 0;
+    background-color: rgb(236, 236, 234);
 
 }
-.iconn{
-    width: 15px;
-    height: 15px;
-        background-color: rgb(236, 236, 234);
-    /* margin-bottom: 12px; */
-}
-.iconn:hover{
+.course-icon:hover{
     background-color: rgb(179, 131, 12);
     color: white;
     padding: 3px;
@@ -250,20 +252,22 @@ ul{
     
 }
 .class-icon div{
-    width: 31%;
+    width: 25%;
     display: flex;
-        background-color: rgb(236, 236, 234);
-    margin: 0 10px;
-    padding-bottom: 6px;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(236, 236, 234);
     border: 5px solid aliceblue;
     border-radius: 7px;
+    padding: 4px 0;
 }
 .class-icon div > a{
     text-decoration: none;
     color: black;
         background-color: rgb(236, 236, 234);
     font-size: 9px;
-    margin-top: 6px;
+    /* margin-top: 8px; */
+    width: 80%;
     /* margin-left: -15px; */
 }
 /* .section-2 :nth-child(2){
@@ -324,7 +328,7 @@ label{
     
 }
 .section-3 h2{
-    font-size: 35px;
+    font-size: 25px;
     border-bottom: 2px solid black;
     width: fit-content;
     margin-bottom: 20px;
@@ -385,6 +389,7 @@ label{
     width: 20px;
     height: 20px;
     color: rgb(155, 141, 141);
+    margin-top: 5px;
     background-color: rgb(238, 238, 238);
 }
 .btnn{
@@ -414,6 +419,7 @@ border: none;
     box-shadow: 1px 1px 4px 1px grey ;
    color: rgb(97, 91, 91);
     width: 25%;
+    font-size: 18px;
     text-transform: capitalize;
     text-align: center;
 }
@@ -456,7 +462,7 @@ select{
 }
 #standard1{
     width: 50%;
-        background-color: rgb(236, 236, 234);
+    background-color: rgb(236, 236, 234);
     padding: 20px ;
     margin: 10px 0px;
     display: block;
@@ -470,33 +476,35 @@ select{
         background-color: rgb(236, 236, 234);
 
 }
-#standard1 h2{
+#standard1 div > h2{
 text-transform: capitalize;
-font-size: 25px;
-    background-color: rgb(236, 236, 234);
+font-size: 18px;
+background-color: rgb(236, 236, 234);
 }
 #standard1 p{
     margin-top: 0;
-        background-color: rgb(236, 236, 234);
+    background-color: rgb(236, 236, 234);
     line-height: 25px;
 }
-#standard1 button{
+#standard1 div > button{
     border: 1px solid rgb(179, 131, 12);
     color: rgb(179, 131, 12);
     margin: 0;
     padding:3px 10px;
-        background-color: rgb(236, 236, 234);
+    background-color: rgb(236, 236, 234);
 
     text-transform: capitalize;
 }
 #standard2{
     width: 50%;
-        background-color: rgb(236, 236, 234);
+    background-color: rgb(236, 236, 234);
     padding: 20px ;
     margin: 10px 0px;
     display: block;
 }
-
+#standard2 button{
+    display: none;
+}
 #standard2 div{
     display: flex;
     justify-content: space-between;
@@ -509,21 +517,20 @@ font-size: 25px;
 }
 #standard2 > div > h2{
 text-transform: capitalize;
-font-size: 25px;
-    background-color: rgb(236, 236, 234);
+font-size: 18px;
+background-color: rgb(236, 236, 234);
 }
 #standard2 p{
     margin-top: 0;
-        background-color: rgb(236, 236, 234);
+    background-color: rgb(236, 236, 234);
     line-height: 25px;
 }
-#standard2> div > button{
+#standard2 > div > button{
     border: 1px solid rgb(179, 131, 12);
     color: rgb(179, 131, 12);
     margin: 0;
     padding:3px 10px;
-        background-color: rgb(236, 236, 234);
-
+    background-color: rgb(236, 236, 234);
     text-transform: capitalize;
 }
 
@@ -547,7 +554,7 @@ font-size: 25px;
 }
 #standard3 > div > h2{
 text-transform: capitalize;
-font-size: 25px;
+font-size: 18px;
 background-color: rgb(236, 236, 234);
 }
 #standard3 p{
@@ -584,7 +591,7 @@ background-color: rgb(236, 236, 234);
 }
 #standard4 > div > h2{
 text-transform: capitalize;
-font-size: 25px;
+font-size: 18px;
 background-color: rgb(236, 236, 234);
 }
 #standard4  p{
@@ -622,8 +629,8 @@ background-color: rgb(236, 236, 234);
 }
 #standard5 > div > h2{
 text-transform: capitalize;
-font-size: 25px;
-    background-color: rgb(236, 236, 234);
+font-size: 18px;
+background-color: rgb(236, 236, 234);
 }
 #standard5 p{
     margin-top: 0;
@@ -639,7 +646,9 @@ font-size: 25px;
 
     text-transform: capitalize;
 }
-
+.more-classes{
+    display: none;
+}
 #standard6{
     width: 50%;
     background-color: rgb(236, 236, 234);
@@ -660,8 +669,8 @@ font-size: 25px;
 }
 #standard6 > div > h2{
 text-transform: capitalize;
-font-size: 25px;
-    background-color: rgb(236, 236, 234);
+font-size: 18px;
+background-color: rgb(236, 236, 234);
 }
 #standard6 p{
     margin-top: 0;
@@ -677,13 +686,13 @@ font-size: 25px;
 
     text-transform: capitalize;
 }
-.section-4:nth-child(3) {
+.section-4:nth-child(4) {
     margin: auto;
     width: 20%;
     text-align: center;
 
 }
-.section-4 :nth-child(3) a {
+.section-4 :nth-child(4) a {
     text-decoration: none;
     color: white;
     background-color: rgb(179, 131, 12);
@@ -920,6 +929,10 @@ footer div a{
         margin-bottom: 30px;
         width: 50%;
     }
+    .intro-imag marquee{
+        display: none;
+        font-size: 10px;
+    }
     .intro-imag img{
         width: 100%; 
         height: 250px;
@@ -970,45 +983,43 @@ footer div a{
         border-radius: 10px;
     }
     .course-icon{
-        width: 15px;
-        height: 15px;
-        background-color: rgb(236, 236, 234);    
-    }
-    .iconn{
-        width: 15px;
-        height: 15px;
+        width: 12px;
+        height: 12px;
+        color: black;
+        margin: 0;
         background-color: rgb(236, 236, 234);
-        /* margin-left: 20px; */
+    
     }
-    .iconn:hover{
+    .course-icon:hover{
         background-color: rgb(179, 131, 12);
         color: white;
         padding: 3px;
         border-radius: 5px;
     }
     .class-icon{
-        width: 100% ; 
+        width: 90% ; 
         display: flex;
         justify-content: space-between;
-        margin-top: 10px;
-        margin-left: -10px;
-        
+        margin-top: 10px;        
     }
     .class-icon div{
-        width: 33%;
+        width: 32%;
         display: flex;
+        justify-content: center;
+        gap: 10px;
         background-color: rgb(236, 236, 234);
-        margin: 0 10px;
-        padding-bottom: 6px;
         border: 5px solid aliceblue;
         border-radius: 7px;
+        padding: 4px 0;
     }
     .class-icon div > a{
         text-decoration: none;
         color: black;
-        background-color: rgb(236, 236, 234);
-        font-size: 7px;
-        margin-left: -10px;
+            background-color: rgb(236, 236, 234);
+        font-size: 9px;
+        /* margin-top: 8px; */
+        width: 80%;
+        /* margin-left: -15px; */
     }
     .section-2:nth-child(2){
         width: 60%;
@@ -1229,7 +1240,13 @@ footer div a{
         padding:3px 7px;
         font-size: 12px;
     }
-    
+    #standard2 button{
+        padding:3px ;
+        font-size:9px;
+        height: fit-content;
+        margin: auto;
+        display: none;
+    }
     #standard3{
         width: 50%;
         background-color: rgb(236, 236, 234);
@@ -1328,13 +1345,13 @@ footer div a{
         padding:3px 7px;
         font-size: 12px;
     }
-    .section-4:nth-child(3) {
+    .section-4:nth-child(4) {
         margin: auto;
         width: 20%;
         text-align: center;
     
     }
-    .section-4 :nth-child(3) a {
+    .section-4 :nth-child(4) a {
         text-decoration: none;
         color: white;
         background-color: rgb(179, 131, 12);
@@ -1440,13 +1457,20 @@ footer div a{
     }
 }
 @media(max-width:500px){
+    *{
+        padding: none;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+        text-transform: capitalize;
+    }
     #sideNav{
         padding: 10px 20px;
-        position: relative;
-        top: 0px;
+        position: absolute;
+        top: 40px;
         width: fit-content;
+        z-index: 1;
     }
-    
     .side{
         display: flex;
     }
@@ -1539,16 +1563,18 @@ footer div a{
         
     } */
     .intro-content{
-        width: 98%;
+        width: 70%;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column-reverse;
         margin: auto;
+        text-align: center;
         padding: 20px;
         padding-bottom: 0;
     }
     .intro-content:nth-child(1){
-        width: 70%;
+        width: 100%;
         text-align: center;
+        margin: auto;
     }
     .intro-content :nth-child(1) h1{
         font-size: 16px;
@@ -1560,7 +1586,7 @@ footer div a{
     }
     .intro-content :nth-child(1) p{
         font-size: 10px;
-        width: 80%;
+        width: 90%;
         margin-bottom:30px;
     }
     .intro-content :nth-child(1) a{
@@ -1570,13 +1596,21 @@ footer div a{
     }
     
     .intro-imag{
-        margin-top: -30px;
-        width: 55%;
+        margin-top: 0px;
+        width: 66%;
         margin-right: 0;
     }
     .intro-imag img{
         width: 220px; 
-        height: 200px; 
+        height: 160px; 
+    }
+    .intro-imag marquee{
+        display: block;
+        font-size: 10px;
+    }
+    .message{
+        background-color: white;
+        color: black;
     }
     .links{
         flex-wrap: nowrap;
@@ -1617,52 +1651,46 @@ footer div a{
         border-radius: 10px;
     }
     .course-icon{
-        width: 0px;
-        height: 0px;
-        display: none;
-    }
-    .iconn{
-        display: none;
-        width: 0px;
-        height: 0px;
+        width: 12px;
+        height: 12px;
+        color: black;
+        margin: 0;
         background-color: rgb(236, 236, 234);
+    
     }
-    .iconn:hover{
+    .course-icon:hover{
         background-color: rgb(179, 131, 12);
         color: white;
         padding: 3px;
         border-radius: 5px;
-        display: none;
     }
     .class-icon{
         width: 100% ; 
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
+        gap: 5px;
+        /* margin-left: -20px; */
         
     }
     .class-icon div{
         width: 33.3%;
         display: flex;
+        justify-content: center;
+        gap: 10px;
         background-color: rgb(236, 236, 234);
-        padding-bottom: 6px;
-        border: 5px solid aliceblue;
+        border: 3px solid aliceblue;
         border-radius: 7px;
-        margin: 0;
+        padding: 4px 0;
     }
     .class-icon div > a{
         text-decoration: none;
         color: black;
-        z-index: 1;
         background-color: rgb(236, 236, 234);
         font-size: 7px;
-        margin-top: 10px;
-        width: 100%;
-        /* margin-left: -15px; */
+        width: 76%;
     }
-    /* .section-2 :nth-child(2){
     
-    } */
     .section-2:nth-child(2){
         width: 40%;
         padding-left: 15px;
@@ -1680,7 +1708,7 @@ footer div a{
     font-size: 10px;
     }
     .checkbox{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     width: 100%;
     }
     .checkbox div{
@@ -1698,12 +1726,12 @@ footer div a{
     label{
         margin: 0;
         margin-left: 7px;
-        font-size: 9px;
+        font-size: 8px;
     }
     .reg{
         margin-top: 0;
         padding: 10px;
-        font-size: 10px;
+        font-size: 9px;
         margin-left: 20px;
     }
     .section-3{
@@ -1781,7 +1809,7 @@ footer div a{
     .select-class h3{
         padding: 10px;
         width: 25%;
-        font-size: 12px;
+        font-size: 10px;
     }
     .select-class:nth-child(2){
         color: rgb(179, 131, 12);
@@ -1791,45 +1819,27 @@ footer div a{
         color: rgb(179, 131, 12);
         border-bottom: 3px solid rgb(179, 131, 12);
     }
-    
-    /* select{
-        border: none;
-        margin: 0;
-        margin-left: -65px;
-        padding: 10px;
-    }
-    .tutor-icon svg{
-        margin-top: 15px;
-    }
-    .tutor{
-        height: 80px;
-        margin-left: -20;
-    } */
-    /* .course{
-           height: 80px; 
-    } */
     .class-option{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .class-option div{
         width: 90%;
         display: flex;
-        gap: 20px;
+        gap: 15px;
         justify-content: space-between;
         margin: auto;
     
     }
     #standard1{
         padding: 10px ;
-        margin: 10px 0px;
+        margin: 0px;
     }
     #standard1 div{
         margin: 0;
-        margin-bottom: 10px;
     }
-    #standard1 h2{
-    font-size: 10px;
+    #standard1 div > h2{
+    font-size: 15px;
     }
     #standard1 p{
         font-size: 10px;
@@ -1838,43 +1848,54 @@ footer div a{
     #standard1> div > button{
         padding:3px ;
         font-size:9px;
-        margin-top: 10px;
         height: fit-content;
     }
     #standard2{
         padding: 10px ;
-        margin: 10px 0px;
+        margin:  0px;
     }
     #standard2 div{
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
-    #standard2 h2{
-    font-size: 10px;
-    }
+    #standard2 div > h2{
+        font-size: 15px;
+        }
     #standard2 p{
-        margin-top: 10px;
         font-size: 10px;
         line-height: 15px;
     }
-    #standard2> div > button{
+    #standard2 div > button{
         padding:3px ;
         font-size:9px;
-        margin-top: 10px;
         height: fit-content;
+        border-radius: 0;
     }
-    
+    #standard2 button{
+        padding:3px ;
+        font-size:9px;
+        height: fit-content;
+        display: block;
+        margin-right: 0px;
+        border: none;
+        margin-bottom: -10px;
+        color: blue;
+        background-color: rgb(236, 236, 234);
+        /* text-transform: capitalize; */
+    }
     #standard3{
         padding: 10px ;
         margin: 10px 0px;
+        display: none;
     }
     #standard3 div{
+        display: none;
         margin: 0;
         margin-bottom: 10px;
     }
-    #standard3 h2{
-    font-size: 10px;
-    }
+    #standard3 div > h2{
+        font-size: 15px;
+        }
     #standard3 p{
         font-size: 10px;
         line-height: 15px;
@@ -1882,11 +1903,11 @@ footer div a{
     #standard3> div > button{
         padding:3px ;
         font-size:9px;
-        margin-top: 10px;
         height: fit-content;
     }
     
     #standard4{
+        display: none;
         padding: 10px ;
         margin: 10px 0px;
     }
@@ -1894,9 +1915,9 @@ footer div a{
         margin: 0;
         margin-bottom: 10px;
     }
-    #standard4 h2{
-    font-size: 10px;
-    }
+    #standard4 div > h2{
+        font-size: 15px;
+        }
     #standard4 p{
         font-size: 10px;
         line-height: 15px;
@@ -1904,11 +1925,11 @@ footer div a{
     #standard4> div > button{
         padding:3px ;
         font-size:9px;
-        margin-top: 10px;
         height: fit-content;
     }
     
     #standard5{
+        display: none;
         padding: 10px ;
         margin: 10px 0px;
     }
@@ -1916,9 +1937,9 @@ footer div a{
         margin: 0;
         margin-bottom: 10px;
     }
-    #standard5 h2{
-    font-size: 10px;
-    }
+    #standard5 div > h2{
+        font-size: 15px;
+        }
     #standard5 p{
         font-size: 10px;
         line-height: 15px;
@@ -1926,20 +1947,20 @@ footer div a{
     #standard5> div > button{
         padding:3px ;
         font-size:9px;
-        margin-top: 10px;
         height: fit-content;
     }
     #standard6{
         padding: 10px ;
         margin: 10px 0px;
+        display: none;
     }
     #standard6 div{
         margin: 0;
         margin-bottom: 10px;
     }
-    #standard6 h2{
-    font-size: 10px;
-    }
+    #standard6 div > h2{
+        font-size: 15px;
+        }
     #standard6 p{
         font-size: 10px;
         line-height: 15px;
@@ -1947,16 +1968,202 @@ footer div a{
     #standard6> div > button{
         padding:3px ;
         font-size:9px;
-        margin-top: 10px;
         height: fit-content;
     }
-    .section-4:nth-child(3) {
+    /* .more-classes{
+        display: block;
+    } */
+    .moreClasses{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    #moreClass1{
+    width: 50%;
+    background-color: rgb(236, 236, 234);
+    padding: 10px ;
+    margin: 10px 0px;
+    display: block;
+}
+
+#moreClass1 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 10px;    
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0px;
+    background-color: rgb(236, 236, 234);
+
+}
+#moreClass1 > div > h2{
+text-transform: capitalize;
+font-size: 15px;
+background-color: rgb(236, 236, 234);
+}
+#moreClass1 p{
+    margin-top: 0;
+    background-color: rgb(236, 236, 234);
+    font-size: 10px;
+    line-height: 15px;}
+#moreClass1 > div > button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px ;
+    font-size:9px;
+    height: fit-content;    
+    background-color: rgb(236, 236, 234);
+    text-transform: capitalize;
+}
+
+#moreClass2{
+    width: 50%;
+    background-color: rgb(236, 236, 234);
+    padding: 10px ;
+    margin: 10px 0px;
+    display: block;
+}
+
+#moreClass2 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 10px;    
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0px;
+    background-color: rgb(236, 236, 234);
+
+}
+#moreClass2 > div > h2{
+text-transform: capitalize;
+font-size: 15px;
+background-color: rgb(236, 236, 234);
+}
+#moreClass2 p{
+    margin-top: 0;
+    background-color: rgb(236, 236, 234);
+    font-size: 10px;
+    line-height: 15px;}
+#moreClass2 > div > button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px ;
+    font-size:9px;
+    height: fit-content;    
+    background-color: rgb(236, 236, 234);
+    text-transform: capitalize;
+}
+
+#moreClass3{
+    width: 50%;
+    background-color: rgb(236, 236, 234);
+    padding: 10px ;
+    margin: 10px 0px;
+    display: block;
+}
+
+#moreClass3 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 10px;    
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0px;
+    background-color: rgb(236, 236, 234);
+
+}
+#moreClass3 > div > h2{
+text-transform: capitalize;
+font-size: 15px;
+background-color: rgb(236, 236, 234);
+}
+#moreClass3 p{
+    margin-top: 0;
+    background-color: rgb(236, 236, 234);
+    font-size: 10px;
+    line-height: 15px;}
+#moreClass3 > div > button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px ;
+    font-size:9px;
+    height: fit-content;    
+    background-color: rgb(236, 236, 234);
+    text-transform: capitalize;
+}
+
+#moreClass4{
+    width: 50%;
+    background-color: rgb(236, 236, 234);
+    padding: 10px ;
+    margin: 10px 0px;
+    display: block;
+}
+
+#moreClass4 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 10px;    
+    width: 100%;
+    height: 30px;
+    margin-bottom: 0px;
+    background-color: rgb(236, 236, 234);
+
+}
+#moreClass4 > div > h2{
+text-transform: capitalize;
+font-size: 15px;
+background-color: rgb(236, 236, 234);
+}
+#moreClass4 p{
+    margin-top: 0;
+    background-color: rgb(236, 236, 234);
+    font-size: 10px;
+    line-height: 15px;}
+#moreClass4 > div > button{
+    border: 1px solid rgb(179, 131, 12);
+    color: rgb(179, 131, 12);
+    margin: 0;
+    padding:3px ;
+    font-size:9px;
+    height: fit-content;    
+    background-color: rgb(236, 236, 234);
+    text-transform: capitalize;
+}
+#moreClass4 button{
+    padding:3px ;
+    font-size:9px;
+    height: fit-content;
+    display: block;
+    margin-right: 0px;
+    border: none;
+    margin-bottom: -10px;
+    color: blue;
+    background-color: rgb(236, 236, 234);
+    /* text-transform: capitalize; */
+}
+.displayBtn{
+    display: block;
+}
+.removeBtn{
+    display: none;
+}
+    .section-4:nth-child(4) {
         margin: auto;
         width: 20%;
         text-align: center;
     
     }
-    .section-4 :nth-child(3) a {
+    .section-4 :nth-child(4) a {
         text-decoration: none;
         color: white;
         background-color: rgb(179, 131, 12);
